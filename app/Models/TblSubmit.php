@@ -8,7 +8,6 @@ class TblSubmit extends Model
 {
     //
     protected $fillable = [
-        'submit_id',
         'tugas_id',
         'user_id',
         'gambar',
