@@ -3,8 +3,8 @@
 use App\Http\Controllers\Admin\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\DesignController;
-use App\Http\Controllers\PercetakanController;
+use App\Http\Controllers\Admin\Division\DesignController;
+use App\Http\Controllers\Admin\Division\PercetakanController;
 
 
 
