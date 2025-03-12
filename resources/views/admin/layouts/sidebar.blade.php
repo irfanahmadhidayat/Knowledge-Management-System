@@ -1,12 +1,12 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
         <a class="sidebar-brand" href="index.html">
-            <span class="align-middle">AdminKit</span>
+            <span class="align-middle">KONVEKSI</span>
         </a>
 
         <ul class="sidebar-nav">
             <li class="sidebar-header">
-                Pages
+                anjooyy
             </li>
 
             <li class="sidebar-item active">
