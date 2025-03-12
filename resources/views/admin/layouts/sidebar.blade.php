@@ -9,24 +9,28 @@
                 anjooyy
             </li>
 
-            <li class="sidebar-item active">
-                <a class="sidebar-link" href="{{route('dashboard.index')}}">
-                    <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            <li class="sidebar-item {{ Request::routeIs('dashboard.index') ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('dashboard.index') }}">
+                    <i class="align-middle" data-feather="sliders"></i>
+                    <span class="align-middle">Dashboard</span>
                 </a>
             </li>
 
-            <li class="sidebar-item">
+            <li class="sidebar-item {{ Request::routeIs('admin.design.index') ? 'active' : '' }}">
                 <a class="sidebar-link" href="{{ route('admin.design.index') }}">
                     <i class="align-middle" data-feather="figma"></i>
                     <span class="align-middle">Devisi Design</span>
                 </a>
             </li>
 
-
-            <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-in.html">
-                    <i class="align-middle" data-feather="printer"></i> <span class="align-middle">Devisi Percetakan</span>
+            <li class="sidebar-item {{ Request::routeIs('admin.percetakan.index') ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('admin.percetakan.index') }}">
+                    <i class="align-middle" data-feather="printer"></i>
+                    <span class="align-middle">Devisi Percetakan</span>
                 </a>
+            </li>
+
+
             </li>
 
             <!-- <li class="sidebar-item">

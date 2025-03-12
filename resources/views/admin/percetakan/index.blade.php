@@ -4,6 +4,6 @@
 
 @section('content')
 
-    <h1>design</h1>
+    <h1>Percetakan</h1>
 
 @endsection
