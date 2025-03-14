@@ -11,17 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbl_submits', function (Blueprint $table) {
+        Schema::create('tbl_moduls', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('tugas_id');
+            $table->unsignedBigInteger('materi_id');
             $table->unsignedBigInteger('user_id');
-            $table->string('file_path');
+            $table->string('judul_modul');
+            $table->string('deskripsi');
+            $table->string('gambar');
+            $table->string('pdf');
             $table->string('link_url');
-            $table->enum('status', ['Dinilai', 'Belum Dinilai']);
-            $table->datetime('create_time');
-            $table->datetime('updatetime');
+            $table->timestamps();
+            $table->string('archive');
 
-            $table->foreign('tugas_id')->references('id')->on('tbl_assignments')->onDelete('cascade');
+            $table->foreign('materi_id')->references('id')->on('tbl_materials')->onDelete('cascade');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
@@ -31,6 +33,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbl_submits');
+        Schema::dropIfExists('tbl_moduls');
     }
 };
