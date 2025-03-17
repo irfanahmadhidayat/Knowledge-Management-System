@@ -37,3 +37,6 @@ Route::get('/admin/percetakan/kebijakan', function () {
 Route::get('/admin/percetakan/modul', function () {
     return view('admin.percetakan.modul');
 })->name('admin.percetakan.modul');
+Route::get('/admin/design/inputmateri/index', function () {
+    return view('admin.design.inputmateri.index');
+})->name('admin.design.inputmateri.index');
