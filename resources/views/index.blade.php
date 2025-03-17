@@ -121,7 +121,7 @@
                         <span class="about-meta">TENTANG KAMI</span>
                         <h2 class="about-title">Optimalkan Manajemen Pengetahuan dalam Industri Percetakan</h2>
                         <p class="about-description">
-                            Knowledge Management System (KMS) kami dirancang khusus untuk membantu perusahaan percetakan dalam mengelola dan berbagi informasi dengan lebih efisien. Dengan platform ini, tim produksi, desain, dan manajemen dapat dengan mudah mengakses, berbagi, serta memberikan umpan balik terhadap materi dan prosedur kerja yang telah disediakan.
+                            Knowledge Management System (KMS) kami dirancang khusus untuk membantu perusahaan percetakan dalam mengelola dan berbagi informasi dengan lebih efisien. Dengan platform ini, tim produksi, desain, dan RnD dapat dengan mudah mengakses, berbagi, serta memberikan umpan balik terhadap materi dan prosedur kerja yang telah disediakan.
                         </p>
 
                         <div class="row feature-list-wrapper">
