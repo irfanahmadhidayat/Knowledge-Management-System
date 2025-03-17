@@ -25,3 +25,7 @@ Route::get('/admin/design/materi', function () {
 Route::get('/admin/design/kebijakan', function () {
     return view('admin.design.kebijakan');
 })->name('admin.design.kebijakan');
+
+Route::get('/admin/design/inputmateri/index', function () {
+    return view('admin.design.inputmateri.index');
+})->name('admin.design.inputmateri.index');
