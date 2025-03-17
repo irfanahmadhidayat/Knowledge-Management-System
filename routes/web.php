@@ -25,3 +25,15 @@ Route::get('/admin/design/materi', function () {
 Route::get('/admin/design/kebijakan', function () {
     return view('admin.design.kebijakan');
 })->name('admin.design.kebijakan');
+
+Route::get('/admin/percetakan/materi', function () {
+    return view('admin.percetakan.materi');
+})->name('admin.percetakan.materi');
+
+Route::get('/admin/percetakan/kebijakan', function () {
+    return view('admin.percetakan.kebijakan');
+})->name('admin.percetakan.kebijakan');
+
+Route::get('/admin/percetakan/modul', function () {
+    return view('admin.percetakan.modul');
+})->name('admin.percetakan.modul');
