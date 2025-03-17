@@ -18,4 +18,6 @@ Route::resource('category', CategoryController::class);
 Route::get('/admin/design', [DesignController::class, 'index'])->name('admin.design.index');
 Route::get('/admin/percetakan', [PercetakanController::class, 'index'])->name('admin.percetakan.index');
 
-
+Route::get('/admin/design/materi', function () {
+    return view('admin.design.materi');
+})->name('admin.design.materi');
