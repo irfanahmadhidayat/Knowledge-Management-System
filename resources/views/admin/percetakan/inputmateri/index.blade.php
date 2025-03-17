@@ -37,4 +37,26 @@
     </div>
     @endforeach
 
+    <div class="mb-3">
+        <label for="feedback" class="form-label">Feedback</label>
+        <textarea class="form-control" id="feedback" rows="3" placeholder="Masukkan feedback Anda..."></textarea>
+        <button class="btn btn-primary mt-2">Kirim</button>
+    </div>
+    
+    <div class="card mt-3">
+        <div class="card-header">Diskusi</div>
+        <div class="card-body">
+            <div class="mb-3">
+                <strong>User 1:</strong>
+                <p>Bagian ini sangat membantu!</p>
+            </div>
+            <div class="mb-3">
+                <strong>User 2:</strong>
+                <p>Apakah ada langkah tambahan untuk instalasi?</p>
+            </div>
+            <input type="text" class="form-control" placeholder="Tulis komentar...">
+            <button class="btn btn-secondary mt-2">Kirim</button>
+        </div>
+    </div>
+
 @endsection

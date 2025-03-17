@@ -13,7 +13,7 @@
 
     <!-- List Materi -->
     <div class="list-group">
-        <a href="{{ route('admin.percetakan.modul') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0 shadow-sm mb-2 p-3 rounded bg-white">
+        <a href="{{ route('admin.percetakan.inputmateri.index') }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center border-0 shadow-sm mb-2 p-3 rounded bg-white">
             <span class="fw-bold text-primary">Materi A</span>
             <i class="bi bi-chevron-right text-primary"></i>
         </a>
