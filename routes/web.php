@@ -21,3 +21,7 @@ Route::get('/admin/percetakan', [PercetakanController::class, 'index'])->name('a
 Route::get('/admin/design/materi', function () {
     return view('admin.design.materi');
 })->name('admin.design.materi');
+
+Route::get('/admin/design/kebijakan', function () {
+    return view('admin.design.kebijakan');
+})->name('admin.design.kebijakan');
