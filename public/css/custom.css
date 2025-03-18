@@ -1,0 +1,6 @@
+.sidebar-item
+    .sidebar-link[aria-expanded="true"]
+    i[data-feather="chevron-right"] {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
