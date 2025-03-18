@@ -13,7 +13,9 @@
     <div class="bg-light p-4 rounded shadow-lg border border-dark mb-4">
         <div class="d-flex justify-content-between align-items-center mb-3">
             <h4 class="mb-0 fw-bold text-primary">Informasi Anggota</h4>
-            <button class="btn btn-outline-primary btn-sm">+ Tambah Nama</button>
+            <a href="{{ route('admin.percetakan.inputanggota.tambahanggota') }}" class="btn btn-outline-primary btn-sm">
+                + Tambah Nama
+            </a>
         </div>
         <div class="row">
             @foreach(['Andika', 'Setya', 'Dafi', 'Irfan', 'Yoga', 'Aulia'] as $name)

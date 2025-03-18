@@ -26,17 +26,40 @@ Route::get('/admin/design/kebijakan', function () {
     return view('admin.design.kebijakan');
 })->name('admin.design.kebijakan');
 
+//Materi Percetakan
+Route::get('/admin/percetakan/inputanggota/tambahanggota', function () {
+    return view('admin.percetakan.inputanggota.tambahanggota');
+})->name('admin.percetakan.inputanggota.tambahanggota');
+
+//Materi Percetakan
 Route::get('/admin/percetakan/materi', function () {
     return view('admin.percetakan.materi');
 })->name('admin.percetakan.materi');
 
+//Kebijakan Percetakan
 Route::get('/admin/percetakan/kebijakan', function () {
     return view('admin.percetakan.kebijakan');
 })->name('admin.percetakan.kebijakan');
 
+//Index Materi Percetakan
 Route::get('/admin/percetakan/inputmateri/index', function () {
     return view('admin.percetakan.inputmateri.index');
 })->name('admin.percetakan.inputmateri.index');
+
+//Tambah Materi Percetakan
+Route::get('/admin/percetakan/inputmateri/tambahmateri', function () {
+    return view('admin.percetakan.inputmateri.tambahmateri');
+})->name('admin.percetakan.inputmateri.tambahmateri');
+
+//Tambah Modul Percetakan
+Route::get('/admin/percetakan/inputmateri/inputmodul/tambahmodul', function () {
+    return view('admin.percetakan.inputmateri.inputmodul.tambahmodul');
+})->name('admin.percetakan.inputmateri.inputmodul.tambahmodul');
+
+//Tambah Praktik Percetakan
+Route::get('/admin/percetakan/inputmateri/inputmodul/tambahpraktik', function () {
+    return view('admin.percetakan.inputmateri.inputmodul.tambahpraktik');
+})->name('admin.percetakan.inputmateri.inputmodul.tambahpraktik');
 
 Route::get('/admin/design/inputmateri/index', function () {
     return view('admin.design.inputmateri.index');

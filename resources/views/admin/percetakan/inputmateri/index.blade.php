@@ -4,14 +4,19 @@
 
 @section('content')
 
-<!--title-->
-<h2><strong>Percetakan</strong></h2>
-<br>
+<div>
+    <!--title-->
+    <h2><strong>Percetakan</strong></h2>
+    <br>
     <div class="d-flex justify-content-between align-items-center bg-primary text-white p-3 rounded shadow mb-4">
         <h3 class="mb-0 text-white fw-bold">Materi A</h3>
         <div>
-            <button class="btn btn-light btn-sm text-primary fw-bold">+ Tambah Modul</button>
-            <button class="btn btn-light btn-sm text-primary fw-bold">+ Tambah Praktik</button>
+            <a href="{{ route('admin.percetakan.inputmateri.inputmodul.tambahmodul') }}" class="btn btn-light btn-sm text-primary fw-bold">
+                + Tambah Modul
+            </a>
+            <a href="{{ route('admin.percetakan.inputmateri.inputmodul.tambahpraktik') }}" class="btn btn-light btn-sm text-primary fw-bold">
+                + Tambah Praktik
+            </a>
         </div>
     </div>
 
@@ -58,5 +63,6 @@
             <button class="btn btn-secondary mt-2">Kirim</button>
         </div>
     </div>
+</div>
 
 @endsection

@@ -3,12 +3,16 @@
 @section('title', 'Dashboard - Materi Percetakan')
 
 @section('content')
-<!-- Daftar Materi -->
+<div>
+    <!-- Daftar Materi -->
     <h2><b>Percetakan</b></h2>
     <br>
     <div class="d-flex justify-content-between align-items-center bg-primary text-white p-3 rounded shadow mb-4">
         <h4 class="mb-0 text-white fw-bold">Daftar Materi</h4>
-        <button class="btn btn-light btn-sm text-primary fw-bold">+ Tambah Materi</button>
+        <a href="{{ route('admin.percetakan.inputmateri.tambahmateri') }}" class="btn btn-light btn-sm text-primary fw-bold">
+            + Tambah Materi
+        </a>
+
     </div>
 
     <!-- List Materi -->
@@ -30,4 +34,5 @@
             <i class="bi bi-chevron-right text-primary"></i>
         </a>
     </div>
+</div>
 @endsection
