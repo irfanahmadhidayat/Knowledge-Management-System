@@ -2,6 +2,10 @@
 
 @section('title', 'Data Role')
 
+@section('extra-css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-lg-12">
@@ -53,4 +57,14 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-js')
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

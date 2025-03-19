@@ -11,9 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('tbl_categories', function (Blueprint $table) {
+        Schema::create('tbl_kebijakans', function (Blueprint $table) {
             $table->id();
-            $table->enum('category_name', ['Materi', 'Modul', 'Kebijakan'])->unique();
+            $table->string('title');
+            $table->text('description');
             $table->timestamps();
         });
     }
@@ -23,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('tbl_categories');
+        Schema::dropIfExists('tbl_kebijakans');
     }
 };

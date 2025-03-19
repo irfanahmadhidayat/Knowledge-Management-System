@@ -13,6 +13,8 @@ use App\Http\Controllers\Rnd\RndMaterialController;
 use App\Http\Controllers\Rnd\RndPenugasanController;
 use App\Http\Controllers\Design\DesignMaterialController;
 use App\Http\Controllers\Design\DesignPenugasanController;
+use App\Http\Controllers\KebijakanController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('index');
@@ -20,9 +22,10 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard-kebijakan/{id}', [DashboardController::class, 'show'])->name('dashboard.show');
     Route::resource('user', UserController::class);
     Route::resource('role', RoleController::class);
-    Route::resource('category', CategoryController::class);
+    Route::resource('kebijakan', KebijakanController::class);
     Route::resource('material', MaterialController::class);
     Route::resource('penugasan', PenugasanController::class);
     Route::resource('design-material', DesignMaterialController::class);

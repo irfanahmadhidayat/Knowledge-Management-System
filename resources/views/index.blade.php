@@ -10,7 +10,9 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Vendor -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +39,7 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
             <div class="d-flex gap-2">
-                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                <a href="{{ route('login') }}" class="btn btn-outline-primary">Login</a>
             </div>
         </div>
     </header>
@@ -55,7 +57,8 @@
                             </h1>
                             <p class="mb-3">
                                 Platform untuk berbagi, mengakses, dan mengelola informasi dalam perusahaan.
-                                Bantu tim Anda meningkatkan produktivitas dengan akses cepat ke sumber daya yang dibutuhkan.
+                                Bantu tim Anda meningkatkan produktivitas dengan akses cepat ke sumber daya yang
+                                dibutuhkan.
                             </p>
                         </div>
                     </div>
@@ -124,22 +127,30 @@
                 <div class="row gy-4 align-items-center justify-content-between">
                     <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
                         <p class="about-description">
-                            Knowledge Management System (KMS) kami dirancang khusus untuk membantu perusahaan percetakan dalam mengelola dan berbagi informasi dengan lebih efisien. Dengan platform ini, tim dapat dengan mudah mengakses, berbagi, serta memberikan umpan balik terhadap materi dan prosedur kerja yang telah disediakan.
+                            Knowledge Management System (KMS) kami dirancang khusus untuk membantu perusahaan percetakan
+                            dalam mengelola dan berbagi informasi dengan lebih efisien. Dengan platform ini, tim dapat
+                            dengan mudah mengakses, berbagi, serta memberikan umpan balik terhadap materi dan prosedur
+                            kerja yang telah disediakan.
                         </p>
 
                         <div class="row feature-list-wrapper">
                             <div class="col-md-6">
                                 <ul class="feature-list">
-                                    <li><i class="bi bi-check-circle-fill"></i> Akses dokumen produksi secara real-time</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Sistem manajemen file desain dan cetak</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Pemberian feedback antar tim produksi</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Akses dokumen produksi secara real-time
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Sistem manajemen file desain dan cetak
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Pemberian feedback antar tim produksi
+                                    </li>
                                 </ul>
                             </div>
                             <div class="col-md-6">
                                 <ul class="feature-list">
-                                    <li><i class="bi bi-check-circle-fill"></i> Dashboard analitik untuk monitoring proyek</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Dashboard analitik untuk monitoring
+                                        proyek</li>
                                     <li><i class="bi bi-check-circle-fill"></i> Pencatatan histori revisi desain</li>
-                                    <li><i class="bi bi-check-circle-fill"></i> Akses kontrol berbasis peran dalam tim</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Akses kontrol berbasis peran dalam tim
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -148,8 +159,10 @@
                     <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="image-wrapper">
                             <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                                <img src="{{ asset('asset/img/Printing.jpg') }}" alt="Business Collaboration" class="img-fluid main-image rounded-4">
-                                <img src="{{ asset('asset/img/Printing_People.jpg') }}" alt="Team Training" class="img-fluid small-image rounded-4">
+                                <img src="{{ asset('asset/img/Printing.jpg') }}" alt="Business Collaboration"
+                                    class="img-fluid main-image rounded-4">
+                                <img src="{{ asset('asset/img/Printing_People.jpg') }}" alt="Team Training"
+                                    class="img-fluid small-image rounded-4">
                             </div>
                             <div class="experience-badge floating">
                                 <h3>5+ <span>Tahun</span></h3>
@@ -175,7 +188,8 @@
                                     <i class="bi bi-cloud-arrow-up-fill display-4"></i>
                                 </div>
                                 <h5 class="fw-bold">Manajemen Dokumen</h5>
-                                <p class="text-muted">Kelola dan akses dokumen perusahaan secara mudah dan aman di satu tempat.</p>
+                                <p class="text-muted">Kelola dan akses dokumen perusahaan secara mudah dan aman di satu
+                                    tempat.</p>
                             </div>
                         </div>
                     </div>
@@ -186,7 +200,8 @@
                                     <i class="bi bi-people-fill display-4"></i>
                                 </div>
                                 <h5 class="fw-bold">Kolaborasi Tim</h5>
-                                <p class="text-muted">Fasilitasi komunikasi dan kolaborasi antar tim secara real-time.</p>
+                                <p class="text-muted">Fasilitasi komunikasi dan kolaborasi antar tim secara real-time.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +212,8 @@
                                     <i class="bi bi-bar-chart-line-fill display-4"></i>
                                 </div>
                                 <h5 class="fw-bold">Analitik & Laporan</h5>
-                                <p class="text-muted">Monitor kinerja perusahaan dengan laporan dan dashboard analitik.</p>
+                                <p class="text-muted">Monitor kinerja perusahaan dengan laporan dan dashboard analitik.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -209,18 +225,21 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title text-center">
                     <h2 class="text-uppercase fw-bold">Hubungi Kami</h2>
-                    <p class="text-muted">Hubungi kami untuk konsultasi lebih lanjut mengenai solusi yang kami tawarkan.</p>
+                    <p class="text-muted">Hubungi kami untuk konsultasi lebih lanjut mengenai solusi yang kami
+                        tawarkan.</p>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
                         <form class="p-4 shadow-lg rounded bg-white animate__animated animate__fadeInUp">
                             <div class="mb-3">
                                 <label for="name" class="form-label fw-bold">Nama</label>
-                                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                                <input type="text" class="form-control" id="name"
+                                    placeholder="Masukkan nama Anda">
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label fw-bold">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Masukkan email Anda">
                             </div>
                             <div class="mb-3">
                                 <label for="message" class="form-label fw-bold">Pesan</label>

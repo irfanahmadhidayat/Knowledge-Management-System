@@ -69,7 +69,7 @@ class MaterialController extends Controller implements HasMiddleware
             'link' => $request->link,
         ]);
 
-        return redirect()->route('material.index');
+        return redirect()->route('material.index')->with('success', 'Material created successfully.');
     }
 
     /**
@@ -125,7 +125,7 @@ class MaterialController extends Controller implements HasMiddleware
             'link' => $request->link,
         ]);
 
-        return redirect()->route('material.index');
+        return redirect()->route('material.index')->with('success', 'Material updated successfully.');
     }
 
 

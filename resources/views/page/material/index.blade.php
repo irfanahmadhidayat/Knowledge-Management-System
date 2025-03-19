@@ -2,14 +2,17 @@
 
 @section('title', 'Material')
 
+@section('extra-css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css" rel="stylesheet">
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header pb-0">
-                    {{-- @can('user-create') --}}
                     <a href="{{ route('material.create') }}" class="btn btn-primary">Tambah Material</a>
-                    {{-- @endcan --}}
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -21,6 +24,7 @@
                                     <th>File</th>
                                     <th>Link</th>
                                     <th>Materi Untuk Divisi</th>
+                                    <th>Materi Dibuat</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -45,6 +49,8 @@
                                             @endif
                                         </td>
                                         <td>{{ ucfirst($material->role->name) }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($material->created_at)->locale('id')->diffForHumans() }}
+                                        </td>
                                         <td>
                                             <a href="{{ route('material.edit', $material->id) }}"
                                                 class="btn btn-warning">Edit</a>
@@ -66,4 +72,15 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-js')
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

@@ -2,6 +2,10 @@
 
 @section('title', 'Hasil Penugasan')
 
+@section('extra-css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-lg-12">
@@ -17,6 +21,7 @@
                                     <th>Gambar/PDF</th>
                                     <th>Link</th>
                                     <th>Pesan</th>
+                                    <th>Tugas Dibuat</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -43,6 +48,8 @@
                                             @endif
                                         </td>
                                         <td>{{ Str::limit($tugas->comment, 20, '...') }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($tugas->created_at)->locale('id')->diffForHumans() }}
+                                        </td>
                                         <td>
                                             <a href="{{ route('hasil-penugasan.show', $tugas->id) }}"
                                                 class="btn btn-info">Show</a>
@@ -64,4 +71,14 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-js')
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

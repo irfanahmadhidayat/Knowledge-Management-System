@@ -2,25 +2,28 @@
 
 @section('title', 'Penugasan')
 
+@section('extra-css')
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.min.css">
+@endsection
+
 @section('content')
     <div class="row">
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header pb-0">
-                    {{-- @can('user-create') --}}
                     <a href="{{ route('penugasan.create') }}" class="btn btn-primary">Tambah Penugasan</a>
-                    {{-- @endcan --}}
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Nama Materi</th>
+                                    <th>Nama Penugasan</th>
                                     <th>Deskripsi</th>
                                     <th>File</th>
                                     <th>Link</th>
                                     <th>Penugasan Untuk Divisi</th>
+                                    <th>Penugasan Dibuat</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -45,6 +48,8 @@
                                             @endif
                                         </td>
                                         <td>{{ ucfirst($penugasan->role->name) }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($penugasan->created_at)->locale('id')->diffForHumans() }}
+                                        </td>
                                         <td>
                                             <a href="{{ route('penugasan.edit', $penugasan->id) }}"
                                                 class="btn btn-warning">Edit</a>
@@ -66,4 +71,14 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-js')
+    <script src="https://cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#dataTable').DataTable();
+        });
+    </script>
 @endsection

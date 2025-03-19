@@ -18,6 +18,9 @@
                         <p class="card-text text-muted">
                             {{ Str::limit($material->material_description, 30, '...') }}
                         </p>
+                        <p class="card-text text-muted">
+                            <i class="fas fa-clock"></i> Dibuat {{ $material->created_at->locale('id')->diffForHumans() }}
+                        </p>
                         <a href="{{ route('design-material.show', $material->id) }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> Lihat Selengkapnya
                         </a>

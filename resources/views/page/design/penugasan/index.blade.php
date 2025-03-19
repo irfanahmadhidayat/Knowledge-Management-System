@@ -18,6 +18,9 @@
                         <p class="card-text text-muted">
                             {{ Str::limit($penugasan->penugasan_description, 30, '...') }}
                         </p>
+                        <p class="card-text text-muted">
+                            <i class="fas fa-clock"></i> Dibuat {{ $penugasan->created_at->locale('id')->diffForHumans() }}
+                        </p>
                         <a href="{{ route('design-penugasan.show', $penugasan->id) }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-eye"></i> Lihat Selengkapnya
                         </a>

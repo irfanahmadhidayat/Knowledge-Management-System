@@ -64,17 +64,14 @@ class HasilPenugasanController extends Controller implements HasMiddleware
             'comment' => $request->comment,
         ]);
 
-        // Mapping role ke route index masing-masing
         $redirectRoutes = [
             'admin' => 'hasil-penugasan.index',
             'design' => 'design-penugasan.index',
             'rnd' => 'rnd-penugasan.index',
         ];
 
-        // Ambil role pertama pengguna (jika ada)
         $userRole = Auth::user()->roles->first()->name ?? null;
 
-        // Redirect berdasarkan role, jika tidak ada role maka ke dashboard
         return redirect()->route($redirectRoutes[$userRole] ?? 'dashboard')
             ->with('success', 'Tugas berhasil dikirim!');
     }

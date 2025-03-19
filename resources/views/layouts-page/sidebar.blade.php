@@ -11,6 +11,13 @@
                 </a>
             </li>
             @hasanyrole('admin|hr')
+                <li class="sidebar-item {{ Request::routeIs('kebijakan.index') ? 'active' : '' }}">
+                    <a class="sidebar-link" href="{{ route('kebijakan.index') }}">
+                        <i class="align-middle" data-feather="file-text"></i>
+                        <span class="align-middle">Kebijakan</span>
+                    </a>
+                </li>
+
                 <li class="sidebar-item {{ Request::routeIs('material.index') ? 'active' : '' }}">
                     <a class="sidebar-link" href="{{ route('material.index') }}">
                         <i class="align-middle" data-feather="book"></i>

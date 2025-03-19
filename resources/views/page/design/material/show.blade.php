@@ -12,8 +12,8 @@
 
         <div class="col-md-12">
             <div class="card shadow border-0">
-                <div class="card-header bg-primary text-white">
-                    <h5 class="m-0"><i class="fas fa-file-alt"></i> Detail Materi</h5>
+                <div class="card-header bg-primary">
+                    <h5 class="m-0 text-white"><i class="fas fa-file-alt"></i> Detail Materi</h5>
                 </div>
                 <div class="card-body">
                     <div class="row">
