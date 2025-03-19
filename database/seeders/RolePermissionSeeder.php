@@ -27,6 +27,55 @@ class RolePermissionSeeder extends Seeder
             'update',
             'delete',
         ],
+
+        'material' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'penugasan' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'hasilPenugasan' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'designMaterial' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'designPenugasan' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'rndMaterial' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
+
+        'rndPenugasan' => [
+            'view',
+            'create',
+            'update',
+            'delete',
+        ],
     ];
     public function run(): void
     {

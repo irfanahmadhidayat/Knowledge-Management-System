@@ -1,6 +1,11 @@
 @extends('layouts-page.app')
 
-@section('title', 'Role Edit')
+@section('title', 'Edit Role')
+
+@section('extra-css')
+    <!-- Select2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+@endsection
 
 @section('content')
     <div class="row">
@@ -22,7 +27,7 @@
                             <label for="name">Name</label>
                             <input type="text" name="name" id="name"
                                 class="form-control @error('name') is-invalid @enderror"
-                                value="{{ old('name', $role->name) }}" placeholder="Enter name">
+                                value="{{ old('name', $role->name) }}" placeholder="Masukkan nama">
                             @error('name')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -52,4 +57,21 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('extra-js')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#permission').select2({
+                placeholder: "Pilih Permission",
+                allowClear: true,
+                width: '100%'
+            });
+        });
+    </script>
 @endsection
